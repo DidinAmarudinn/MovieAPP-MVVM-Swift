@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Top Rated View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="TopRatedViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="TopRatedViewController" customModule="MovieAppMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uvy-o0-K1l">
+                                <rect key="frame" x="0.0" y="56" width="414" height="806"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezv-HQ-ln0">
+                                        <rect key="frame" x="24" y="24" width="366" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fXb-Q3-kOb">
+                                        <rect key="frame" x="0.0" y="68.5" width="414" height="737.5"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="fXb-Q3-kOb" firstAttribute="top" secondItem="ezv-HQ-ln0" secondAttribute="bottom" constant="24" id="57f-i9-a3E"/>
+                                    <constraint firstItem="fXb-Q3-kOb" firstAttribute="leading" secondItem="uvy-o0-K1l" secondAttribute="leading" id="SBh-h9-4y6"/>
+                                    <constraint firstAttribute="trailing" secondItem="ezv-HQ-ln0" secondAttribute="trailing" constant="24" id="Vxg-fF-nVj"/>
+                                    <constraint firstAttribute="bottom" secondItem="fXb-Q3-kOb" secondAttribute="bottom" id="Zr7-Yq-Dix"/>
+                                    <constraint firstItem="ezv-HQ-ln0" firstAttribute="leading" secondItem="uvy-o0-K1l" secondAttribute="leading" constant="24" id="a55-BD-Fse"/>
+                                    <constraint firstItem="ezv-HQ-ln0" firstAttribute="top" secondItem="uvy-o0-K1l" secondAttribute="top" constant="24" id="fZ1-8A-seI"/>
+                                    <constraint firstAttribute="trailing" secondItem="fXb-Q3-kOb" secondAttribute="trailing" id="iKG-c8-8oP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uvy-o0-K1l" secondAttribute="trailing" id="EWa-z5-xrR"/>
+                            <constraint firstItem="uvy-o0-K1l" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bFR-eW-9uF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="uvy-o0-K1l" secondAttribute="bottom" id="enO-n1-WgV"/>
+                            <constraint firstItem="uvy-o0-K1l" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="12" id="vY5-aS-LIz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fXb-Q3-kOb" id="oNS-wf-dtJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
